@@ -1,6 +1,9 @@
 // angular
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
+// Nx
+import { NxModule } from '@nrwl/nx';
+
 // nativescript
 import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 import { NativeScriptHttpClientModule } from 'nativescript-angular/http-client';
@@ -15,6 +18,7 @@ import { AppComponent } from './app.component';
   imports: [
     NativeScriptModule,
     NativeScriptHttpClientModule,
+    NxModule.forRoot({}),
     CoreModule,
     SharedModule,
     AppRoutingModule
